@@ -1,0 +1,12 @@
+[project]
+name = "cli-trace-extractor"
+version = "1.42.0"
+description = "Capture Claude Code, Codex CLI, or Gemini CLI conversations as a JSON trace with latency metrics, optionally with a tmux-based terminal transcript"
+requires-python = ">=3.10"
+dependencies = [
+    "mitmproxy>=10.0.0",
+    "orjson>=3.9.0",
+]
+
+[project.scripts]
+cli-trace-extractor = "main:main"
